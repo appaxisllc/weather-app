@@ -1,5 +1,6 @@
-import React from 'react'
-import Timec from '../css/Timec.css'
+
+import React from 'react';
+// import Timec from '../css/Timec.css';
 
 function Time() {
 
@@ -7,9 +8,10 @@ function Time() {
   let date = newDate.getDate()
   let month = newDate.getMonth() + 1;
   let year = newDate.getFullYear();
-
+  
+  console.log(year) 
   return (
-    <span style={{ float: 'right', paddingRight: '5px' }}>
+    <span style={{float : 'right', paddingRight : '5px'}}>
       {month}-{date}-{year}
     </span>
   )
